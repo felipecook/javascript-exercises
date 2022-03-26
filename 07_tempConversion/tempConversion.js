@@ -1,6 +1,6 @@
 const ftoc = function(farenheit) {
   
-  let celsius = ((farenheit - 32) * (5/6));
+  let celsius = ((farenheit - 32) * .5555555);
   
   return Math.round(celsius * 10) / 10;
   
@@ -9,7 +9,7 @@ const ftoc = function(farenheit) {
 };
 
 const ctof = function(celsius) {
-  let farenheit = ((celsius * (9/5)) + 32);
+  let farenheit = ((celsius * (1.8)) + 32);
 
   return Math.round(farenheit * 10) / 10;
 };
